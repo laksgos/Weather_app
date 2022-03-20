@@ -1,0 +1,23 @@
+{
+  "name": "Weather_App",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laksgos/Weather_app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laksgos/Weather_app/issues"
+  },
+  "homepage": "https://github.com/laksgos/Weather_app#readme",
+  "dependencies": {
+    "node-fetch": "^3.2.3"
+  }
+}
