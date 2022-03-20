@@ -1,5 +1,3 @@
-import { json } from "stream/consumers";
-
 export const setLocationObject = (locationObj, coordsObj) => {
     const { lat, lon, name, unit } = coordsObj;
 
