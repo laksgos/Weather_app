@@ -1,5 +1,4 @@
-const fetch = require("node-fetch");
-const { encode } = require("punycode");
+import fetch from "node-fetch";
 
 const { WEATHER_API_KEY } = process.env;
 

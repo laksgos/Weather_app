@@ -14,10 +14,8 @@ export const getHomeLocation = () => {
     return localStorage.getItem("defaultWeatherLocation")
 }
 
+import fetch from "node-fetch";
 export const getWeatherFromCoords = async(locationObj) => {
-
-
-
     // const lat = locationObj.getLat();
     // const lon = locationObj.getLon();
     // const units = locationObj.getUnit();
@@ -32,12 +30,7 @@ export const getWeatherFromCoords = async(locationObj) => {
     //     console.error(err)
     // }
 
-
-
-
-
     const urlDataObj = {
-
         lat: locationObj.getLat(),
         lon: locationObj.getLon(),
         units: locationObj.getUnit()
