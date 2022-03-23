@@ -1,9 +1,13 @@
 {
-  "name": "Weather_App",
+  "name": "weather-app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "type": "module",
+  "directories": {
+    "src": "dist/js"
+  },
   "scripts": {
+    "start": "netlify dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

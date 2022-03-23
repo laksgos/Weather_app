@@ -1,4 +1,5 @@
-node_modules
+# node modules
+node_modules/
 
-# Local Netlify folder
+# netlify settings
 .netlify
