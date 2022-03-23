@@ -7,11 +7,11 @@ exports.handler = async(event, context) => {
     const { text, units } = params;
     const regex = /^\d+$/g;
     const flag = regex.test(text) ? "zip" : "q";
+    text = encodeURI(text); // encode possible spaces in text
     const url = `https://api.openweathermap.org/data/2.5/weather?${flag}=${text}&units=${units}&appid=${WEATHER_API_KEY}`;
 
-    const encodedUrl = encodeURI(url);
     try {
-        const dataStream = await fetch(encodedUrl)
+        const dataStream = await fetch(url)
         const jsonData = await dataStream.json()
         return {
             statusCode: 200,

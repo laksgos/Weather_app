@@ -8,7 +8,7 @@ exports.handler = async (event, context) => {
   const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly,alerts&units=${units}&appid=${WEATHER_API_KEY}`
 
   try {
-    const weatherStream = await fetch(url); // why is this url not encoded? -- bm
+    const weatherStream = await fetch(url);
     const weatherJson = await weatherStream.json();
     return {
       statusCode: 200,
